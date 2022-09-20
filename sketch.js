@@ -99,8 +99,8 @@ function Monster(){
     monster.y=Math.round(random(100,550));
     /*atualize o código abaixo para aumentar 
     a velocidade do monsterGroup (grupo de monstros)
-     em 10*/
-    monster.velocityX = -8;
+    em 10*/
+    monster.velocityX=-(8+(score/10));
     monster.setLifetime=50;
     
     monsterGroup.add(monster);
@@ -119,8 +119,8 @@ function fruits(){
     fruit.x=600;
     /*atualize o código abaixo para aumentar
      a velocidade do fruitGroup (grupo de frutas) em 4*/
+     fruit.velocityX=-(7+(score/4));
 
-    fruit.velocityX=-7
     }
     else
     {
@@ -129,7 +129,7 @@ function fruits(){
       
      /*atualize o código abaixo para aumentar 
      a velocidade do fruitGroup (grupo de frutas) em 4 */
-      fruit.velocityX= 7;
+     fruit.velocityX= (7+(score/4));
       }
     }
     
